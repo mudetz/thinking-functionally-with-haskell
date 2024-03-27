@@ -1,0 +1,7 @@
+# Stack
+.stack-work/
+*~
+
+# JetBrains
+.idea/
+*.iml
