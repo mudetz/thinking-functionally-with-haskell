@@ -13,7 +13,6 @@ author:         Manuel Weitzman
 maintainer:     manuelweitzman@gmail.com
 copyright:      2024 Manuel Weitzman
 license:        BSD-3-Clause
-license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
@@ -25,6 +24,12 @@ source-repository head
 
 library
   exposed-modules:
+      Chapter01.ExerciseA
+      Chapter01.ExerciseB
+      Chapter01.ExerciseC
+      Chapter01.ExerciseD
+      Chapter01.ExerciseE
+      Chapter01.ExerciseF
       Lib
   other-modules:
       Paths_thinking_functionally_with_haskell
