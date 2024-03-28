@@ -1,13 +1,17 @@
-module Chapter01.ExerciseC where
+module Chapter01.ExerciseC (main) where
 
-[1,2,3] ++ [3,2,1]
--- [1,2,3,3,2,1]
-
-"Hello" ++ " World!"
--- "Hello World!"
-
-[1,2,3] ++ []
--- [1,2,3]
-
-"Hello" ++ " " ++ "World!"
--- "Hello World!"
+main :: IO ()
+main = do
+    _ <- print (([1,2,3] ++ [3,2,1]) :: [Int])
+    -- [1,2,3,3,2,1]
+    
+    _ <- print $ "Hello" ++ " World!"
+    -- "Hello World!"
+    
+    _ <- print (([1,2,3] ++ []) :: [Int])
+    -- [1,2,3]
+    
+    _ <- print $ "Hello" ++ " " ++ "World!"
+    -- "Hello World!"
+    
+    return ()

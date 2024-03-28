@@ -1,6 +1,6 @@
-module Chapter01.ExerciseF where
+module Chapter01.ExerciseF (anagrams) where
 
-import Data.List
+import Data.List (intercalate, sort)
 
 anagrams :: Int -> [String] -> String
 anagrams len entries = let filteredWords = sort $ filter (\x -> len == length x) entries

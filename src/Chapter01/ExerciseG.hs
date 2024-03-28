@@ -1,7 +1,7 @@
-module Chapter01.ExerciseG where
+module Chapter01.ExerciseG (song, songRecursive) where
 
-import Data.Char
-import Data.List
+import Data.Char (toLower)
+import Data.List (intercalate)
 
 numberToWord :: Int -> String
 numberToWord n = case n of

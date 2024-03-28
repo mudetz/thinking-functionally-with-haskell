@@ -1,4 +1,8 @@
-module Chapter01.ExerciseE where
+module Chapter01.ExerciseE (
+  additiveIdentity,
+  concatenationIdentity,
+  functionalCompositionIdentity
+) where
 
 -- Subtraction and division are examples of non-asociative operators
 

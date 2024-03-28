@@ -1,4 +1,4 @@
-module Chapter01.ExerciseB where
+module Chapter01.ExerciseB (main) where
 
 -- Note that sin (π / 3) = √3 / 2
 -- From which it is derived that sin² (π / 3) = (√3 / 2)² = 3 / 4 = 0.75
@@ -19,10 +19,14 @@ module Chapter01.ExerciseB where
    --      In the expression: sin ^ 2 (pi / 3)
    --      In an equation for ‘it’: it = sin ^ 2 (pi / 3)
 
--- sin theta^2 is sin² theta, as function application takes precedence
-sin (pi / 3)^2
--- 0.7499999999999999
+main :: IO ()
+main = do
+    -- sin theta^2 is sin² theta, as function application takes precedence
+    _ <- print ((sin (pi / 3.0)**2)::Double)
+    -- 0.7499999999999999
 
--- (sin theta)^2 is sin² theta, here the parenthesis do not change precedence of application
-(sin (pi / 3))^2
--- 0.7499999999999999
+    -- (sin theta)^2 is sin² theta, here the parenthesis do not change precedence of application
+    _ <- print (((sin (pi / 3.0))**2.0)::Double)
+    -- 0.7499999999999999
+
+    return ()
