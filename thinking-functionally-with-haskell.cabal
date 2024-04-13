@@ -32,6 +32,9 @@ library
       Chapter01.ExerciseF
       Chapter01.ExerciseG
       Chapter02.ExerciseA
+      Chapter02.ExerciseB
+      Chapter02.ExerciseC
+      Chapter02.ExerciseD
       Lib
   other-modules:
       Paths_thinking_functionally_with_haskell
