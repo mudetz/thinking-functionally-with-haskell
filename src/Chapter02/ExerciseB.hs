@@ -1,4 +1,4 @@
-module Chapter02.ExerciseB where
+module Chapter02.ExerciseB () where
 
   
 -- [0, 1)

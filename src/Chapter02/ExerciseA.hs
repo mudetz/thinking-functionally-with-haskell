@@ -1,3 +1,3 @@
-module Chapter02.ExerciseA where
+module Chapter02.ExerciseA () where
 
 -- Yes??
